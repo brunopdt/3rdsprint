@@ -123,7 +123,8 @@ function onLocationFound(e) {
 
 		var locationMarker = L.circle(e.latlng).addTo(map)
 
-		var locationCircle = L.circle(e.latlng, radius).addTo(map);
+		var locationCircle = L.circle(e.latlng, radius), {color: 'red',
+    fillColor: '#f03',fillOpacity: 0.5}.addTo(map);
 	}
 
 	function onLocationError(e) {
