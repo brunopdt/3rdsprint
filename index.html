@@ -116,8 +116,8 @@
     attribution: '© OpenStreetMap'
 }).addTo(map);
 	  
-	  var redIcon = new L.Icon({
-  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+var greenIcon = new L.Icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
   iconSize: [25, 41],
   iconAnchor: [12, 41],
@@ -125,9 +125,10 @@
   shadowSize: [41, 41]
 });
 
-
-L.marker([-19.9326551541274, -43.936040839319524]), {icon: redIcon}).addTo(map);
+L.marker([-19.9326551541274, -43.936040839319524], {icon: greenIcon}).addTo(map);
 	  marker.bindPopup("<b>PUC MINAS</b><br>Unidade Praça da Liberdade").openPopup();
+<!--L.marker([-19.9326551541274, -43.936040839319524]).addTo(map);-->
+	  
 
 function onLocationFound(e) {
 		var radius = e.accuracy / 2;
