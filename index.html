@@ -117,6 +117,7 @@
 }).addTo(map);
 
 var marker = L.marker([-19.9326551541274, -43.936040839319524]).addTo(map);
+	  marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
 
 function onLocationFound(e) {
 		var radius = e.accuracy / 2;
