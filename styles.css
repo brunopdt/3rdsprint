@@ -99,9 +99,28 @@ ion-icon:hover {
   display: flex;
   color: #0f3e5c;
   margin-top: 1em;
-  margin-left: 12vw;
-  margin-right: 12vw;
   font-size: 1.15rem;
   justify-content: left;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .bloco {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  .bloco {
+    margin-left: 32vw;
+    margin-right: 32vw;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .bloco {
+    margin-left: 35vw;
+    margin-right: 35vw;
+  }
 }
